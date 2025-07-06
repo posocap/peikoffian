@@ -15,5 +15,5 @@ COPY pics ./pics
 
 # Expose port 80
 EXPOSE 80
-
+EXPOSE 8080
 # No CMD needed, nginx default

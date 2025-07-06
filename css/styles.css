@@ -183,6 +183,28 @@ html, body {
   display: none !important;
 }
 
+.peikoff-img {
+  display: block;
+  max-width: 50vw;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+  margin: 40px auto 32px auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.35);
+  background: #222;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .peikoff-img {
+    max-width: 90vw;
+    max-height: 40vh;
+    margin-bottom: 80px;
+  }
+}
+
 #footer {
   position: fixed;
   left: 0;
@@ -198,6 +220,7 @@ html, body {
   backdrop-filter: blur(4px);
   z-index: 10;
   letter-spacing: 0.04em;
+  pointer-events: auto;
 }
 #footer a {
   color: #ffe082;

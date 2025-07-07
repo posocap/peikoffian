@@ -77,6 +77,7 @@ html, body {
   left: 0 !important;
   top: 0 !important;
 }
+/* Add/adjust responsive rules for mobile */
 @media (max-width: 600px) {
   .cosmic-container {
     width: 98vw;
@@ -244,6 +245,7 @@ html, body {
   position: relative;
 }
 
+/* Add responsive image rules for mobile */
 @media (max-width: 600px) {
   .peikoff-img {
     max-width: 90vw;
@@ -329,4 +331,36 @@ html, body {
   background: linear-gradient(135deg, #ffd700 0%, #e6c200 100%);
   color: #222 !important;
   box-shadow: 0 0 10px #ffd70099;
+}
+
+.peikoff-book-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto 0 auto;
+  max-width: 420px;
+  min-width: 220px;
+  padding: 18px 28px;
+  background: #fffbe7;
+  color: #222;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.25em;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  text-align: center;
+  font-weight: 700;
+  flex-direction: column;
+  font-variation-settings: 'wght' 700;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  position: relative;
+  z-index: 3;
+}
+.peikoff-book-promo a {
+  color: #1976d2;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.peikoff-book-promo a:hover {
+  color: #0d47a1;
 }

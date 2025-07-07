@@ -134,7 +134,7 @@ $(function () {
     function showPeikoffImage() {
       // Hide the cosmic-container, strawberry, and coming-soon text
       $(".cosmic-container, .strawberry-container, .coming-soon").fadeOut(800, function() {
-        // Only add image once
+        // Only add image and promo once
         if (!$("#peikoff-img").length) {
           var img = $('<img>', {
             id: 'peikoff-img',
@@ -142,8 +142,12 @@ $(function () {
             alt: 'Leonard Peikoff',
             class: 'peikoff-img'
           });
-          $(".canvas").append(img);
+          var promo = $('<div>', {
+            class: 'peikoff-book-promo'
+          }).html('Check out Leonard Peikoff\'s book, <a href="http://peikoff.com/books/the-dim-hypothesis/" target="_blank" rel="noopener">The DIM Hypothesis</a>');
+          $(".canvas").append(img, promo);
           img.hide().fadeIn(1200);
+          promo.hide().delay(400).fadeIn(1200);
         }
       });
     }
